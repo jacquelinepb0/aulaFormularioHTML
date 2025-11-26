@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercicio</title>
-    <link rel="stylesheet" href="exercicio.css">
+    <link rel="stylesheet" href="../styles/exercicio.css">
+<!-- CSS interno -->
+<style>
+   p {
+color: black;
+    }
+</style>
+
 </head>
 <body>
     <main>
-        <img src="Logo.svg" alt="logo circles">
-        <div>
-            <h1>Login into your account</h1>
+        <img src="../assets/Logo.svg" alt="logo circles">
+
+        <div class="div-intro">
+            <!-- CSS inline -->
+            <h1 style="color: white;">Login into your account</h1>
             <p>let us make the circle bigger!</p>
         </div>
         <div>
@@ -23,9 +32,9 @@
 <label for="password">Password</label> </br>
 <input placeholder="Your Password" type="password" name="password" id="password" required>
   </div>
-<p>Don't have an account?<a href="">Sign up</a></p>
+<p class="link-cadastro">Don't have an account?<a href="">Sign up</a></p>
 
-<button type="submit">Login</button>
+<button class="button" type="submit">Login</button>
 
 </form>
  </div>
