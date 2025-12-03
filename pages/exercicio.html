@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercicio</title>
     <link rel="stylesheet" href="../styles/exercicio.css">
-<!-- CSS interno -->
-<style>
-   p {
-color: black;
-    }
-</style>
+    <!-- CSS interno -->
+    <style>
+        p {
+            color: black;
+        }
+    </style>
 
 </head>
+
 <body>
     <main>
         <img src="../assets/Logo.svg" alt="logo circles">
+        <section>
+            <div class="div-intro">
+                <!-- CSS inline -->
+                <h1 style="color: white;">Login into your account</h1>
+                <p>let us make the circle bigger!</p>
+            </div>
+                <form>
+                    <div>
+                        <label for="email">Email</label> </br>
+                        <input placeholder="nome@example.com" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="password">Password</label> </br>
+                        <input placeholder="Your Password" type="password" name="password" id="password" required>
+                    </div>
+                    <div class="div-link-btn">
+                    <p class="link-cadastro">Don't have an account?<a href="">Sign up</a></p>
 
-        <div class="div-intro">
-            <!-- CSS inline -->
-            <h1 style="color: white;">Login into your account</h1>
-            <p>let us make the circle bigger!</p>
-        </div>
-        <div>
-<form>
-    <div>
-<label for="email">Email</label> </br>
-<input placeholder="nome@example.com"  name="email" id="email" required>
-   </div>
-   <div>
-<label for="password">Password</label> </br>
-<input placeholder="Your Password" type="password" name="password" id="password" required>
-  </div>
-<p class="link-cadastro">Don't have an account?<a href="">Sign up</a></p>
+                    <button class="button" type="submit">Login</button>
+                    </div>
 
-<button class="button" type="submit">Login</button>
+                </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2023 Circle. All rights reserved.</p>
 
-</form>
- </div>
-  </main>
-    <footer><p>&copy;2023 Circle. All rights reserved.</p>
-    
     </footer>
 </body>
+
 </html>
