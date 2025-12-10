@@ -1,125 +1,140 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-family: 'AxiForma', sans-serif ;
-    box-sizing: border-box;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: "AxiForma", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 @font-face {
-    font-family: "AxiForma" ;
-    src: url(../assets/Axiforma.otf)
+  font-family: "AxiForma";
+  src: url(../assets/Axiforma.otf);
 }
-
 
 /* variaveis CSS */
-    :root {
- --bg-primary: #041643;
- --color-primary: #1352F1;
- --color-white: #FFF;
+:root {
+  --bg-primary: #041643;
+  --color-primary: #1352f1;
+  --color-secundary: #1352f1ff;
+  --color-white: #fff;
 
-/* gradiente cinza */
- --gray: #4E4E4E ;
- --dark-gray: #696969;
- --light-gray: #AFAFAF;
- --lighter-gray: #d7d7d7;
-
-
-   }
-
-body{
-    display: flex;
-    flex-direction: column;
-justify-content: space-between;
-background-color: var(--bg-primary);
-background-image: url(../assets/gradient.svg);
-background-size: 105vh;
-background-repeat: no-repeat;
-padding: 91px 123px 30px;
-height: 100vh ; /* viewport/ */
+  /* gradiente cinza */
+  --gray: #4e4e4e;
+  --dark-gray: #696969;
+  --light-gray: #afafaf;
+  --lighter-gray: #d7d7d7;
 }
 
-section{
-     margin-top: 100px;
-    display: flex;
-    gap: 100px;
-    justify-content: space-between;
-    height: 100%;
-    flex-wrap: wrap;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--bg-primary);
+  background-image: url(../assets/gradient.svg);
+  background-size: 105vh;
+  background-repeat: no-repeat;
+  padding: 91px 123px 30px;
+  height: 100vh; /* viewport/ */
 }
 
-.div-intro{
-    flex: 1;
-    padding:50px 30px  ;
-    width: 343.33px;
-    border: 1px solid red;
+section {
+  margin-top: 100px;
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.div-intro {
+  flex: 1;
+  padding: 50px 30px;
+  width: 343.33px;
+  border: 1px solid red;
 }
 
 .div-intro > h1 {
-    /* width: 230px; */
-    width: 12ch; /* character */
-    margin-bottom: 23px;
+  /* width: 230px; */
+  width: 12ch; /* character */
+  margin-bottom: 23px;
 }
 
 .div-intro > p {
-    color: var(--light-gray);
+  color: var(--light-gray);
 }
 
-form{
-    flex: 1;
-    background-color: var(--color-white);
-    width: 343.33px;
-    padding: 50px 30px;
-    border-radius: 16px;
+form {
+  flex: 1;
+  background-color: var(--color-white);
+  max-width: 500px;
+  min-width: 500px;
+  padding: 50px 30px;
+  border-radius: 10px;
 }
 
-form label, form input {
-font-size: 9px;
-color: var(--dark-gray);
+form label,
+form input {
+  font-size: 9px;
+  color: var(--dark-gray);
 }
 
 form input {
-    width: 100%;
-    border:1px solid var(--lighter-gray) ;
-    color: var(--lighter-gray);
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 24px;
+  width: 100%;
+  border: 1px solid var(--lighter-gray);
+  color: var(--lighter-gray);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+form input:focus {
+  border-color: var(--bg-primary);
 }
 
 /* ::pseudo-element */
-form input::placeholder{
-    color: var(--lighter-gray);
+form input::placeholder {
+  color: var(--lighter-gray);
 }
 
-.div-link-btn{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.div-link-btn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .link-cadastro {
-    font-size: 10px;
-    color: var(--gray);
+  font-size: 10px;
+  color: var(--gray);
 }
 
 .link-cadastro a {
-    font-weight: 600;
-    color: var(--gray);
+  font-weight: 600;
+  color: var(--gray);
 }
 
 .button {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    padding: 10px 37px;
-    border-radius: 5px;
-    font-size: 9px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 10px 50px;
+  border-radius: 5px;
+  font-size: 9px;
+}
+
+.button:hover {
+  background-color: var(--color-secundary);
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.button:active {
+  background-color: var(--color-primary);
+  transform: translateY(2px);
 }
 
 footer > p {
-    color: var(--color-white);
-    text-align: center;
+  color: var(--color-white);
+  text-align: center;
 }
