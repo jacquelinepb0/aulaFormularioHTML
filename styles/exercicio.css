@@ -138,3 +138,54 @@ footer > p {
   color: var(--color-white);
   text-align: center;
 }
+
+@media screen and (width <= 1024px) {
+.div-form {
+  width: 100% ;
+  display: flex;
+  justify-content: center;
+}
+}
+
+footer{
+  margin: 50px auto;
+}
+
+@media screen and (width <= 473px) {
+ body {
+  padding: 0;
+ }
+ 
+ img {
+  margin: 50px 20px;
+}
+
+  section {
+margin: 0;
+gap: 50px;
+  }
+
+.div-intro{
+  padding: 0 20px;
+}
+
+.div-intro > h1 {
+  width: 10ch;
+}
+
+  form {
+    max-width: 400px;
+    min-width: 350px;
+    margin: 0 auto;
+  }
+
+.div-link-btn {
+  flex-direction: column-reverse;
+  align-items: start;
+  gap: 50px;
+}
+  
+  .div-link-btn button{
+width: 100%;
+  }
+}
